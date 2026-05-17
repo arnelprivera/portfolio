@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arnel Rivera — Graphic Designer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+
+  
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">[</span>arn<span class="logo-bracket">]</span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#gallery" class="nav-link">My Edits</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting reveal-up">Hello, I'm</p>
+        <h1 class="hero-name reveal-up">Arnel<br /><span class="name-accent">Rivera</span></h1>
+        <div class="hero-role reveal-up">
+          <span class="role-label">Graphic Designer</span>
+        </div>
+        <p class="hero-tagline reveal-up">
+          <span id="typed-text"></span><span class="cursor">|</span>
+        </p>
+        <div class="hero-btns reveal-up">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="#contact" class="btn-ghost">Let's Talk</a>
+        </div>
+        <div class="hero-socials reveal-up">
+          <a href="mailto:riveraarnel556@gmail.com" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon" title=" Tiktok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="hero-visual reveal-right">
+        <div class="avatar-wrapper">
+          <div class="avatar-glow"></div>
+          <div class="avatar-ring ring-1"></div>
+          <div class="avatar-ring ring-2"></div>
+          <div class="avatar-frame">
+            <img src="2.png" alt="Arnel Rivera" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" />
+          </div>
+          <div class="avatar-badge">
+            <i class="fas fa-palette"></i>
+            <span>Designer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-label reveal-up">About Me</div>
+      <h2 class="section-title reveal-up">Crafting Visual<br /><span class="accent">Experiences</span></h2>
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p>I'm <strong>Arnel Rivera</strong>, a passionate graphic designer who transforms ideas into visually compelling stories. With a deep love for typography, color theory, and purposeful composition, I create designs that don't just look good — they <em>communicate</em>.</p>
+          <p>Currently honing my craft through academic projects and personal explorations, I blend traditional design principles with modern digital aesthetics to push creative boundaries.</p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-num">7+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">2+</span>
+              <span class="stat-label">Years Learning</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">∞</span>
+              <span class="stat-label">Creativity</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-skills reveal-right">
+          <h3>Skills & Tools</h3>
+          <div class="skills-grid">
+            <div class="skill-chip"><i class="fas fa-layer-group"></i> Photoshop</div>
+            <div class="skill-chip"><i class="fab fa-html5"></i> HTML/CSS</div>
+            <div class="skill-chip"><i class="fas fa-font"></i> Typography</div>
+            <div class="skill-chip"><i class="fas fa-vector-square"></i> UI/UX Design</div>
+            <div class="skill-chip"><i class="fas fa-tachograph-digital"></i>Canva</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-label reveal-up">My Work</div>
+      <h2 class="section-title reveal-up">Featured <span class="accent">Projects</span></h2>
+      <p class="section-sub reveal-up">A collection of my school activities.</p>
+      <div class="projects-grid">
+
+        <div class="project-card reveal-up" data-project="0">
+          <div class="card-glow"></div>
+          <div class="card-tag">School Activities</div>
+          <div class="card-icon"><i class="fas fa-globe"></i></div>
+          <h3>Activity 1</h3>
+          <p>This HTML code creates a simple webpage that displays the poem “Estudyante” by Arnel Rivera with formatted text, headings, and an image.</p>
+          <div class="card-tech"><span>HTML</span></div>
+          <button class="card-cta">View Project <i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <div class="project-card reveal-up" data-project="1">
+          <div class="card-glow"></div>
+          <div class="card-tag">School Activities</div>
+          <div class="card-icon"><i class="fas fa-globe"></i></div>
+          <h3>Activity 2</h3>
+          <p>This HTML code creates a colorful webpage about the hobby of playing guitar using headings, paragraphs, text formatting, colors, and styles to present information clearly and creatively.</p>
+          <div class="card-tech"><span>HTML and CSS</span></div>
+          <button class="card-cta">View Project <i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <div class="project-card reveal-up" data-project="2">
+          <div class="card-glow"></div>
+          <div class="card-tag">School Activities</div>
+          <div class="card-icon"><i class="fas fa-globe"></i></div>
+          <h3>Activity 3</h3>
+          <p>This HTML code creates a styled student grade report webpage that displays subjects, instructors, grades, average grade, and remarks using tables and CSS design.</p>
+          <div class="card-tech"><span>HTML and CSS</span></div>
+          <button class="card-cta">View Project <i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <div class="project-card reveal-up" data-project="3">
+          <div class="card-glow"></div>
+          <div class="card-tag">School Activities</div>
+          <div class="card-icon"><i class="fas fa-globe"></i></div>
+          <h3>Activity 4</h3>
+          <p>This HTML code creates, which displays two small inner tables inside a larger bordered table, demonstrating the use of nested tables and CSS styling for layout and formatting.</p>
+          <div class="card-tech"><span>HTML and CSS</span></div>
+          <button class="card-cta">View Project <i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <div class="project-card reveal-up" data-project="4">
+          <div class="card-glow"></div>
+          <div class="card-tag">School Activities</div>
+          <div class="card-icon"><i class="fas fa-globe"></i></div>
+          <h3>Activity 5</h3>
+          <p>Built and designed a personal portfolio website from scratch using HTML, CSS, and JavaScript with smooth animations and responsive layout.</p>
+          <div class="card-tech"><span>HTML and CSS</span></div>
+          <button class="card-cta">View Project <i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <div class="project-card reveal-up" data-project="5">
+          <div class="card-glow"></div>
+          <div class="card-tag">School Activities</div>
+          <div class="card-icon"><i class="fas fa-globe"></i></div>
+          <h3>Activity 6</h3>
+          <p>This HTML code is a bordered table layout that uses `rowspan` and `colspan` to arrange cells into sections labeled TOP, LEFT, MIDDLE, RIGHT, and BOTTOM with centered styling.</p>
+          <div class="card-tech"><span>HTML and CSS</span></div>
+          <button class="card-cta">View Project <i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <div class="project-card reveal-up" data-project="6">
+          <div class="card-glow"></div>
+          <div class="card-tag">School Activities</div>
+          <div class="card-icon"><i class="fas fa-globe"></i></div>
+          <h3>Activity 7</h3>
+          <p>This HTML code is a formatted webpage that displays different types of HTML lists inside a table, including unordered and ordered lists, to showcase favorite things and car brands with styled headers and categories.</p>
+          <div class="card-tech"><span>HTML and CSS</span></div>
+          <button class="card-cta">View Project <i class="fas fa-arrow-right"></i></button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <div class="section-label reveal-up">My Edits</div>
+      <h2 class="section-title reveal-up">Sample <span class="accent">Works</span></h2>
+      <p class="section-sub reveal-up">A showcase of my graphic edits, pubmats, and visual experiments.</p>
+      <div class="gallery-grid">
+       
+        <div class="gallery-item reveal-up"><img src="edit 1.png" alt="Edit 1" /><div class="gallery-overlay"><i class="fas fa-expand"></i></div></div>
+        <div class="gallery-item reveal-up"><img src="edit 2.png" alt="Edit 2" /><div class="gallery-overlay"><i class="fas fa-expand"></i></div></div>
+        <div class="gallery-item reveal-up"><img src="edit 3.jpeg" alt="Edit 3" /><div class="gallery-overlay"><i class="fas fa-expand"></i></div></div>
+        <div class="gallery-item reveal-up"><img src="edit 4.jpeg" alt="Edit 4" /><div class="gallery-overlay"><i class="fas fa-expand"></i></div></div>
+        <div class="gallery-item reveal-up"><img src="edit 5.jpeg" alt="Edit 5" /><div class="gallery-overlay"><i class="fas fa-expand"></i></div></div>
+       
+        <div class="gallery-item reveal-up"><img src="edit 6.jpeg" alt="Edit 6" /><div class="gallery-overlay"><i class="fas fa-expand"></i></div></div>
+        <div class="gallery-item reveal-up"><img src="edit 7.jpeg" alt="Edit 7" /><div class="gallery-overlay"><i class="fas fa-expand"></i></div></div>
+        <div class="gallery-item reveal-up"><img src="edit 8.jpeg" alt="Edit 8" /><div class="gallery-overlay"><i class="fas fa-expand"></i></div></div>
+        <div class="gallery-item reveal-up"><img src="edit 9.jpeg" alt="Edit 9" /><div class="gallery-overlay"><i class="fas fa-expand"></i></div></div>
+        <div class="gallery-item reveal-up"><img src="edit 10.jpeg" alt="Edit 10" /><div class="gallery-overlay"><i class="fas fa-expand"></i></div></div>
+      </div>
+    </div>
+  </section>
+ 
+
+  
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-label reveal-up">Get In Touch</div>
+      <h2 class="section-title reveal-up">Let's Create<br /><span class="accent">Together</span></h2>
+      <p class="section-sub reveal-up">Have a project in mind? I'd love to collaborate and bring your vision to life.</p>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="contact-card">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-label">Email</span>
+                <a href="mailto:riveraarnel556@gmail.com" class="contact-value">riveraarnel556@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-facebook-f"></i></div>
+              <div>
+                <span class="contact-label">Facebook</span>
+                <a href="#" class="contact-value">Rivera Arnel</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-instagram"></i></div>
+              <div>
+                <span class="contact-label">Instagram</span>
+                <a href="#" class="contact-value">@itzme_arnel</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-tiktok"></i></div>
+              <div>
+                <span class="contact-label">Tiktok</span>
+                <a href="#" class="contact-value">@itzme_arnel</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal-right">
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <input type="text" id="name" placeholder=" " required />
+              <label for="name">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder=" " required />
+              <label for="email">Your Email</label>
+            </div>
+            <div class="form-group">
+              <textarea id="message" rows="5" placeholder=" " required></textarea>
+              <label for="message">Your Message</label>
+            </div>
+            <button type="submit" class="btn-primary full-width">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">[</span>pran<span class="logo-bracket">]</span>
+      </div>
+      <p class="footer-text">Designed & Built by <span class="accent">Arnel Rivera</span></p>
+      <div class="footer-socials">
+        <a href="mailto:riveraarnel556@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+      </div>
+      <p class="footer-copy">© 2026 Arnel Rivera. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="project-modal">
+      <button class="modal-close" id="modal-close"><i class="fas fa-times"></i></button>
+      <div class="modal-header">
+        <div class="modal-tag" id="modal-tag"></div>
+        <h2 class="modal-title" id="modal-title"></h2>
+      </div>
+      <div class="modal-body">
+        <p id="modal-desc"></p>
+        <div class="modal-details">
+          <div class="modal-detail-item">
+            <span class="detail-label">Tools Used</span>
+            <div id="modal-tools" class="modal-tools"></div>
+          </div>
+          <div class="modal-detail-item">
+            <span class="detail-label">Category</span>
+            <div id="modal-category"></div>
+          </div>
+          <div class="modal-detail-item">
+            <span class="detail-label">Status</span>
+            <div class="status-badge">Completed</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">Message sent! I'll get back to you soon. 🎨</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
