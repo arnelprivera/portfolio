@@ -484,15 +484,18 @@ form.addEventListener('submit', async (e) => {
   btn.disabled = true;
 
   const formData = new FormData(form);
+  const data = Object.fromEntries(formData);
 
   try {
-    const response = await fetch(form.action, {
+    const response = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
-      body: formData,
-      headers: { 'Accept': 'application/json' }
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
     });
 
-    if (response.ok) {
+    const result = await response.json();
+
+    if (result.success) {
       form.reset();
       btn.innerHTML = '<span>Send Message</span><i class="fas fa-paper-plane"></i>';
       btn.disabled = false;
@@ -506,7 +509,6 @@ form.addEventListener('submit', async (e) => {
     btn.disabled = false;
   }
 });
-
 function showToast() {
   toast.classList.add('show');
   setTimeout(() => toast.classList.remove('show'), 3800);
